@@ -1,0 +1,18 @@
+[project]
+name = "franki"
+version = "0.1.0"
+description = "Real-time subtitle mining with Anki integration"
+dependencies = [
+    "pyperclip",
+    "wiktionaryparser",
+    "spacy",
+    "fr-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.8.0/fr_core_news_sm-3.8.0-py3-none-any.whl",
+    "beautifulsoup4",
+    "requests"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
